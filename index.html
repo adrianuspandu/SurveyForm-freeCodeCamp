@@ -1,0 +1,66 @@
+<!-- 1 form:
+  name input
+  email input
+  number input with min max attribute
+  each within a label with an id
+  each with placeholder attribute
+  select input
+  two radio buttons using name attribute, select only one
+  textarea input
+  submit button
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>The Rizz's Wrestling Course</title>
+  </head>
+
+  <body>
+    <h1 id="title">The Rizz's Wrestling Course</h1>
+    <p id="description">Seek us to know what it means to fight</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your real name" required/></label>
+        <label id="wrestling-name-label" for="wrestling-name">Wrestling Name: <input id="wrestling-name" type="text" placeholder="For example: 'The Rizz'" required/></label>
+        <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your email address" required/></label>
+        <label id="number-label" for="number">Age: <input id="number" min="12" max="80" type="number" placeholder="Enter your age" required/></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferred Coach: </legend>
+        <label><input name="coach" class="inline" type="radio" checked value="rizz"/>The Rizz</label>
+        <label><input name="coach" class="inline" type="radio" value="slacker"/>Mr. Slacker</label>
+        <label>Select desired program:
+          <select id="dropdown">
+            <option value="">Select an option</option>
+            <option value="1">Regular course (once a week)</option>
+            <option value="2">Intensive course (twice a week)</option>
+            <option value="3">Super-intensive course (3 times a week)</option>
+            <option value="4">Super deluxe training program (limited slots)</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Tell us how you found us: (select all that apply)
+        </legend>
+        <label><input type="checkbox" name="reach" value="google"/>Google</label>
+        <label><input type="checkbox" name="reach" value="friend"/>From a friend</label>
+        <label><input type="checkbox" name="reach" value="youtube"/>Youtube</label>
+        <label><input type="checkbox" name="reach" value="instagram"/>Instagram</label>
+        <label><input type="checkbox" name="reach" value="billboard"/>Billboard</label>
+        <label>Tell us about yourself: <textarea placeholder="I like to chokeslam!" rows="5" cols="10"></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Become a Wrestler!"></submit>
+    </form>
+  </body>
+
+  <footer>
+    <p>Made by <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"> The Rizz </a></p>
+  </footer>
+</html>
